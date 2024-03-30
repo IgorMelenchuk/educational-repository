@@ -23,6 +23,21 @@ class Car:
         else:
             print('nothing')
 
+    def show_price(instance):
+        if hasattr(instance, 'price'):
+            print(f'Car price is {instance.price}')
+        else:
+            print('nothing')
+
+
+
+    def set_price(mashina,value,age='New'):
+        mashina.price = value
+        mashina.age = value
+
+    def set_engine(mashina,value):
+        mashina.engine = value
+
 
 class Lion:
     name = input(print(f'Введите имя льва'))

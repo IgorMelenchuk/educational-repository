@@ -12,38 +12,38 @@ class Cat:
 class Car:
     model = 'BMW'
 
-    def show_ABS(instance):
-        if hasattr(instance, 'ABS'):
-            print(f'ABS is {instance.ABS}')
+    def show_ABS(self):
+        if hasattr(self, 'ABS'):
+            print(f'ABS is {self.ABS}')
         else:
             print('nothing')
-    def show_engine(instance):
-        if hasattr(instance, 'engine'):
-            print(f'Car engine is {instance.engine}')
-        else:
-            print('nothing')
-
-    def show_price(instance):
-        if hasattr(instance, 'price'):
-            print(f'Car price is {instance.price}')
+    def show_engine(self):
+        if hasattr(self, 'engine'):
+            print(f'Car engine is {self.engine}')
         else:
             print('nothing')
 
+    def show_price(self):
+        if hasattr(self, 'price'):
+            print(f'Car price is {self.price}')
+        else:
+            print('nothing')
 
 
-    def set_price(mashina,value,age='New'):
-        mashina.price = value
-        mashina.age = value
 
-    def set_engine(mashina,value):
-        mashina.engine = value
+    def set_price(self,value,age='New'):
+        self.price = value
+        self.age = value
+
+    def set_engine(self,value):
+        self.engine = value
 
 
 class Lion:
     name = input(print(f'Введите имя льва'))
 
-    def lion_roar(instance):
-        if hasattr(instance, 'name'):
+    def lion_roar(self):
+        if hasattr(self, 'name'):
             print(f'Rrrrrr!!!')
         else: print(f'Неопознанный лев')
 
@@ -63,3 +63,4 @@ class Counter:
 
     def reset(self):
         self.value = 0
+

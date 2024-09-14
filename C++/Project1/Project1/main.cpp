@@ -3,8 +3,20 @@
 
 int main() {
 	setlocale(LC_ALL, "RU");
-	int num = 43;
-	std::cout << "Переменная:" << num << std::endl;
+
+	// Типы переменных
+	short a, b;
+	std::cout << "Введите переменную A:";
+	std::cin >> a; 
+
+	std::cout << "Введите переменную B:";
+	std::cin >> b;
+
+	std::cout << "A:" << a << "\nB:" <<b;
+
+
+	// Типы данных
+	short num1 = 1; // -32k - 32k
 
 	return(0);
 }

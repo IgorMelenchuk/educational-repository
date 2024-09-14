@@ -63,3 +63,57 @@ class Person:
             print(True)
         else:
             print(False)
+
+
+class Money:
+
+    def __init__(self, money):
+        self.money = money
+
+my_money = Money(100)
+your_money = Money(1000)
+
+
+class Point:
+    def __init__(self, x, y, color="black"):
+        self.x = x
+        self.y = y
+        self.color = color
+points = list()
+for i in range(1, 2001, 2):
+    if i == 3:
+        points.append(Point(i, i , "yellow"))
+        print(points)
+    else:
+        points.append(Point(i, i))
+
+
+class Point:
+    def __init__(self, x, y, color="black"):
+        self.x = x
+        self.y = y
+        self.color = color
+points = [Point(2*i+1, 2*i+1) for i in range(0, 1000)]
+points[1].color = 'yellow'
+
+import random
+class Line:
+    def __init__(self, a, b, c, d):
+        self.sp = (a, b)
+        self.ep = (c, d)
+class Rect:
+    def __init__(self, a, b, c, d):
+        self.sp = (a, b)
+        self.ep = (c, d)
+class Ellipse:
+    def __init__(self, a, b, c, d):
+        self.sp = (a, b)
+        self.ep = (c, d)
+
+elements = [random.choice(random.choices)(random.randint(1, 100), random.randint(1, 100), random.randint(1, 100), random.randint(1, 100)) for i in range(217)]
+for i in elements:
+    if 'Line' in str(i):
+        print('find', elements.index(i))
+        i.sp = (0, 0)
+        i.ep = (0, 0)
+

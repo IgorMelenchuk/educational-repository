@@ -1,8 +1,8 @@
 import pika
 
 def main():
-    # Подключаемся к локальному серверу RabbitMQ
-    connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
+    # Подключаемся к серверу RabbitMQ
+    connection = pika.BlockingConnection(pika.ConnectionParameters('rabbitmq'))
     channel = connection.channel()
 
     # Создаем очередь 'hello'
